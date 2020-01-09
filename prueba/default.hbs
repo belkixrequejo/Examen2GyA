@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+
+    {{!-- Document Settings --}}
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    {{!-- Base Meta --}}
+    <title>{{{t meta_title}}}</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/global.css"}}"/>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Montserrat&display=swap" rel="stylesheet">
+    <header>
+
+        <nav class="site-nav">
+            <div class="site-nav-left">
+                <ul class="nav" role="menu">
+                    <li class="sideNav-item u-fontSizeBase u-flex u-flexContentAround">
+                        <a href="https://belkixrequejo.me/es" title="Spanish">
+                            <img src="https://i.ibb.co/m9GprQx/flag-for-spain-1f1ea-1f1f8.png">
+                        </a>
+                        <a href="https://belkixrequejo.me/" title="English">
+                            <img src="https://i.ibb.co/nmLw3hg/flag-for-united-states-1f1fa-1f1f8.png">
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+
+<body class="{{t body_class}}">
+
+<div class="site-wrapper">
+
+    {{{body}}}
+    {{ghost_foot}}
+    {{#if pagination.pages}}
+        <script src="{{asset "js/infinitescroll.min.js"}}"></script>
+    {{/if}}
+
+</body>
+</html>

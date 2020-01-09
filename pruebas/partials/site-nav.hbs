@@ -1,0 +1,30 @@
+{{^is "home"}}
+    {{#if @site.logo}}
+        <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+    {{else}}
+        <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+    {{/if}}
+{{/is}}
+
+<nav class="site-nav">
+
+    <div class="site-nav-left">
+
+        {{#if @site.navigation}}
+            <ul class="nav" role="menu">
+                <li class="sideNav-item u-fontSizeBase u-flex u-flexContentAround">
+                    <a href="https://belkixrequejo.me/es" title="Spanish">
+                        <img src="https://i.ibb.co/m9GprQx/flag-for-spain-1f1ea-1f1f8.png">
+                    </a>
+                    <a href="https://belkixrequejo.me/" title="English">
+                        <img src="https://i.ibb.co/nmLw3hg/flag-for-united-states-1f1fa-1f1f8.png">
+                    </a>
+                </li>
+
+
+            </ul>
+            {{navigation}}
+        {{/if}}
+    </div>
+
+</nav>

@@ -1,0 +1,5 @@
+Programacion JAVASCRIPT
+
+Uno de los muchos métodos HTML JavaScript es getElementById().
+
+Este ejemplo utiliza el método para "find" un elemento HTML (con id = "demo") y cambia el contenido del elemento ( innerHTML) a "Hola JavaScript":
